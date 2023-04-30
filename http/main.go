@@ -22,7 +22,7 @@ func getBooks(w http.ResponseWriter, r *http.Request) {
 
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("COntent-Type", "text/html")
+	w.Header().Set("Content-Type", "text/html")
 
 	w.Write([]byte("<h1 color=steelblue> Hello World </h1>"))
 }
