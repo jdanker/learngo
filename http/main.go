@@ -17,7 +17,7 @@ func getBooks(w http.ResponseWriter, r *http.Request) {
 
 	book := Book{Title: "The Alchemist", Author: "Paulo Coelho", Pages: 197}
 
-	json.NewEncoder(w).Encode(book) 
+	json.NewEncoder(w).Encode(book) // gotta pass the responsewriter to the encoder 
 }
 
 
